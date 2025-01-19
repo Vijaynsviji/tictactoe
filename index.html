@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container bg-primary-800">
+        <div class="inner-div">
+            <div class="heading-div box-size bg-neutral-600">
+                <p class="fw-medium">Player x</p>
+                <p id="playerx" class="fw-medium fs-medium">0</p>
+            </div>
+            <div class="heading-div box-size bg-neutral-200">
+                <p class="fw-medium">Draw</p>
+                <p id="draw" class="fw-medium fs-medium">0</p>
+            </div>
+            <div class="heading-div box-size bg-neutral-400">
+                <p class="fw-medium">Player O</p>
+                <p id="playero" class="fw-medium fs-medium">0</p>
+            </div>
+        </div>
+        <div class="inner-div-row">
+            <div class="row">
+                <div id="00" class="box box-size one"></div>
+                <div id="01" class="box box-size two"></div>
+                <div id="02" class="box box-size three"></div>
+            </div>
+            <div class="row">
+                <div id="10" class="box box-size four"></div>
+                <div id="11" class="box box-size five"></div>
+                <div id="12" class="box box-size six"></div>
+            </div>
+            <div class="row">
+                <div id="20" class="box box-size seven"></div>
+                <div id="21" class="box box-size eight"></div>
+                <div id="22" class="box box-size nine"></div>
+            </div>
+        </div>
+    </div>
+    <div class="details bg-primary-800">
+        <p class="text-neutral-300"><span class="fw-medium text-neutral-500">Current Turn : </span>Player <span id="player">X</span></p>
+        <p id="winnerTag" class="text-neutral-200"></p>
+
+        <button id='reset' class="bg-neutral-600">Reset Board</button>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
